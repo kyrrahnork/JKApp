@@ -1,0 +1,30 @@
+{
+  "name": "empty-project-template",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-elements": "^0.19.1",
+    "react-native-flexi-radio-button": "^0.2.2",
+    "react-native-radio-buttons-group": "^1.0.7",
+    "react-native-recyclerview-list": "^0.3.4",
+    "react-native-simple-radio-button": "^2.7.3",
+    "react-native-super-grid": "^2.4.3",
+    "react-navigation": "^2.18.2"
+  },
+  "jest": {
+    "preset": "jest"
+  },
+  "devDependencies": {
+    "jest-expo": "^31.0.0"
+  }
+}
