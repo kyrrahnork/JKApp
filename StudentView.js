@@ -14,7 +14,10 @@ export default class BackgroundImage extends Component{
     render() {
         const resizeMode = 'center';
         const items = [
-            { name: 'My Campaigns', code: '#fff' },
+          { name: 'Courses', code: '#fff' }, { name: 'Students', code: '#fff' },
+          { name: 'Article Views', code: '#fff' }, { name: 'Articles Edited', code: '#fff' },
+          { name: 'Words Added', code: '#fff' }, { name: 'Articles Created', code: '#fff' },
+        ];
     return (
     <GridView
         itemDimension={130}

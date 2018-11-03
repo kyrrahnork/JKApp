@@ -3,7 +3,6 @@ import {createStackNavigator} from 'react-navigation';
 import Start from'./Start'
 import InstructorView from './InstructorView';
 import StudentView from './StudentView';
-import FlatList from './FlatList';
 
 console.disableYellowBox = true;
 
@@ -12,7 +11,6 @@ const RootStack = createStackNavigator(
     Start: Start,
     InstructorView: InstructorView,
     StudentView: StudentView,
-    FlatList: FlatList,
   },
   {
     initialRouteName: 'Start'

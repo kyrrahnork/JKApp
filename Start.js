@@ -34,7 +34,7 @@ render() {
           title="Instructor Account"
           color="#841584"
           accessibilityLabel="Instructor Account"
-          onPress={()=>this.props.navigation.navigate('flatlist')}
+          onPress={()=>this.props.navigation.navigate('InstructorView')}
     />
       
       <Button style={styles.button}

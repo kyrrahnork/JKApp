@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
-    FlatList,
-	  TouchableHighlight,
     StyleSheet
 } from 'react-native';
 import GridView from 'react-native-super-grid';
@@ -11,7 +9,7 @@ import GridView from 'react-native-super-grid';
 class CampaignView extends React.Component {
     render() {
       return (
-        <Text>Here</Text>
+        <Text style={styles.campaignView}>Here</Text>
       );
     }
   }
@@ -31,7 +29,6 @@ export default class BackgroundImage extends Component{
     return (
     <View style={styles.container}>
         <GridView
-            itemDimension={130}
             items={items}
             style={styles.gridView}
             renderItem={item => (
@@ -56,21 +53,31 @@ const styles = StyleSheet.create({
     gridView: {
       paddingTop: 25,
       flex: 1,
+      borderBottomColor: 'black',
+      borderBottomWidth: 1,
+      marginBottom: 0,
     },
     itemContainer: {
       justifyContent: 'flex-end',
       borderRadius: 5,
       padding: 10,
-      height: 50,
+      height: 60,
     },
     itemName: {
+      flex: 2,
       fontSize: 16,
       color: '#000',
       fontWeight: '600',
     },
     itemCode: {
+      flex: 2,
       fontWeight: '600',
-      fontSize: 12,
+      fontSize: 16,
       color: '#000',
     },
+    campaignView:{
+      flex: 1.5,
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
   });
