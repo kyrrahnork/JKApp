@@ -5,19 +5,17 @@ import {
     StyleSheet
 } from 'react-native';
 import GridView from 'react-native-super-grid';
+import CampaignView from './CampaignView';
 
-class CampaignView extends React.Component {
-    render() {
-      return (
-        <Text style={styles.campaignView}>Here</Text>
-      );
-    }
-  }
+// class CampaignView extends React.Component {
+//     render() {
+//       return (
+//         <Text style={styles.campaignView}>Here</Text>
+//       );
+//     }
+//   }
 
 export default class BackgroundImage extends Component{
-    // static navigationOptions={
-    //     header:null
-    // };
 
     render() {
         const resizeMode = 'center';
@@ -79,5 +77,5 @@ const styles = StyleSheet.create({
       flex: 1.5,
       alignItems: 'center',
       justifyContent: 'center',
-    }
+    },
   });
