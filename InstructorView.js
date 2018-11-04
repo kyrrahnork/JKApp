@@ -7,14 +7,6 @@ import {
 import GridView from 'react-native-super-grid';
 import CampaignView from './CampaignView';
 
-// class CampaignView extends React.Component {
-//     render() {
-//       return (
-//         <Text style={styles.campaignView}>Here</Text>
-//       );
-//     }
-//   }
-
 export default class BackgroundImage extends Component{
 
     render() {

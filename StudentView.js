@@ -5,54 +5,69 @@ import {
     StyleSheet
 } from 'react-native';
 import GridView from 'react-native-super-grid';
+import CampaignView from './CampaignView';
 
 export default class BackgroundImage extends Component{
-    // static navigationOptions={
-    //     header:null
-    // };
 
     render() {
         const resizeMode = 'center';
         const items = [
-          { name: 'Courses', code: '#fff' }, { name: 'Students', code: '#fff' },
-          { name: 'Article Views', code: '#fff' }, { name: 'Articles Edited', code: '#fff' },
-          { name: 'Words Added', code: '#fff' }, { name: 'Articles Created', code: '#fff' },
-        ];
+            { name: 'Courses', code: '#fff' }, { name: 'Students', code: '#fff' },
+            { name: 'Article Views', code: '#fff' }, { name: 'Articles Edited', code: '#fff' },
+            { name: 'Words Added', code: '#fff' }, { name: 'Articles Created', code: '#fff' },
+          ];
     return (
-    <GridView
-        itemDimension={130}
-        items={items}
-        style={styles.gridView}
-        renderItem={item => (
-          <View style={[styles.itemContainer, { backgroundColor: item.code }]}>
-            <Text style={styles.itemName}>{item.name}</Text>
-            <Text style={styles.itemCode}>{item.code}</Text>
-          </View>
-        )}
-      />
+    <View style={styles.container}>
+        <GridView
+            items={items}
+            style={styles.gridView}
+            renderItem={item => (
+            <View style={[styles.itemContainer,]}>
+                <Text style={styles.itemName}>{item.name}</Text>
+                <Text style={styles.itemCode}>{item.code}</Text>
+            </View>  
+            )}  
+        />
+        <CampaignView />
+    </View> 
     )
     }
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
     gridView: {
       paddingTop: 25,
       flex: 1,
+      borderBottomColor: 'black',
+      borderBottomWidth: 1,
+      marginBottom: 0,
     },
     itemContainer: {
       justifyContent: 'flex-end',
       borderRadius: 5,
       padding: 10,
-      height: 150,
+      height: 60,
     },
     itemName: {
+      flex: 2,
       fontSize: 16,
       color: '#000',
       fontWeight: '600',
     },
     itemCode: {
+      flex: 2,
       fontWeight: '600',
-      fontSize: 12,
+      fontSize: 16,
       color: '#000',
+    },
+    campaignView:{
+      flex: 1.5,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
   });
