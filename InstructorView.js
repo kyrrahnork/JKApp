@@ -8,13 +8,12 @@ import GridView from 'react-native-super-grid';
 import CampaignView from './CampaignView';
 
 export default class BackgroundImage extends Component{
-
     render() {
         const resizeMode = 'center';
         const items = [
-            { name: 'Courses', code: '#fff' }, { name: 'Students', code: '#fff' },
-            { name: 'Article Views', code: '#fff' }, { name: 'Articles Edited', code: '#fff' },
-            { name: 'Words Added', code: '#fff' }, { name: 'Articles Created', code: '#fff' },
+            { name: '843', code: 'Courses' }, { name: '17741', code: 'Students' },
+            { name: '13M', code: 'Words Added' }, { name: '661M', code: 'Views' },
+            { name: '16.6K', code: 'Created' }, { name: '3.19K', code: 'Uploads' },
           ];
     return (
     <View style={styles.container}>
@@ -25,11 +24,11 @@ export default class BackgroundImage extends Component{
             <View style={[styles.itemContainer,]}>
                 <Text style={styles.itemName}>{item.name}</Text>
                 <Text style={styles.itemCode}>{item.code}</Text>
-            </View>  
-            )}  
+            </View>
+            )}
         />
         <CampaignView />
-    </View> 
+    </View>
     )
     }
 }
@@ -42,26 +41,27 @@ const styles = StyleSheet.create({
       },
     gridView: {
       paddingTop: 25,
-      flex: 1,
+      flex: 5,
       borderBottomColor: 'black',
       borderBottomWidth: 1,
       marginBottom: 0,
     },
     itemContainer: {
+      alignItems: 'center',
       justifyContent: 'flex-end',
       borderRadius: 5,
       padding: 10,
-      height: 60,
+      height: 100,
     },
     itemName: {
-      flex: 2,
-      fontSize: 16,
-      color: '#000',
-      fontWeight: '600',
+      flex: 5,
+      fontSize: 30,
+      color: '#878CCC',
+      fontWeight: '300',
     },
     itemCode: {
-      flex: 2,
-      fontWeight: '600',
+      flex: 4,
+      fontWeight: '200',
       fontSize: 16,
       color: '#000',
     },
